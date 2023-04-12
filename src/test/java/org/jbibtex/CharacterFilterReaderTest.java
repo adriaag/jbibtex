@@ -9,6 +9,8 @@ import java.io.Reader;
 
 import org.junit.Test;
 
+import github.io.adriaag.jbibtex.CharacterFilterReader;
+
 import static org.junit.Assert.assertEquals;
 
 public class CharacterFilterReaderTest {

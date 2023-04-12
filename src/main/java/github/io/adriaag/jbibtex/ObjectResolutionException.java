@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2012 University of Tartu
  */
-package org.jbibtex;
+package github.io.adriaag.jbibtex;
 
 public class ObjectResolutionException extends IllegalArgumentException {
 

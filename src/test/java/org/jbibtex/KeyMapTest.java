@@ -5,6 +5,9 @@ package org.jbibtex;
 
 import org.junit.Test;
 
+import github.io.adriaag.jbibtex.Key;
+import github.io.adriaag.jbibtex.KeyMap;
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

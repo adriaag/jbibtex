@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2014 University of Tartu
  */
-package org.jbibtex;
+package github.io.adriaag.jbibtex;
 
 import java.io.FilterReader;
 import java.io.IOException;
