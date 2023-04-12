@@ -37,8 +37,16 @@ public class BibTeXDatabase implements Serializable {
 
 		if(object instanceof BibTeXEntry){
 			BibTeXEntry entry = (BibTeXEntry)object;
+			
+            BibTeXEntry entryToPut = entryToPut(entry, entries);
 
-			success = this.entries.putIfMissing(entry.getKey(), entry);
+            if(entryToPut != null) {
+                this.entries.put(entryToPut.getKey(), entryToPut);
+                success = true;
+            } else {
+                success = false;
+            }
+			
 		} else
 
 		{
@@ -127,4 +135,21 @@ public class BibTeXDatabase implements Serializable {
 	public Map<Key, BibTeXEntry> getEntries(){
 		return Collections.unmodifiableMap(this.entries);
 	}
+	
+    private BibTeXEntry entryToPut(BibTeXEntry entryCandidate, KeyMap<BibTeXEntry> currentEntries) {
+
+        if(!currentEntries.containsKey(entryCandidate.getKey())) {
+            return entryCandidate;
+        }
+
+        int i = 0;
+        Key k = null;
+        do {
+            k = new Key(String.format("%s-%d", entryCandidate.getKey().getValue(), ++i));
+        } while(currentEntries.containsKey(k));
+
+        BibTeXEntry entryToAdd = new BibTeXEntry(entryCandidate.getType(), k);
+        entryToAdd.addAllFields(entryCandidate.getFields());
+        return entryToAdd;
+    }
 }
