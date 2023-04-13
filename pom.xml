@@ -56,14 +56,13 @@
 		</dependency>
 	</dependencies>
 	
-	<distributionManagement> 
-    <repository>
-        <id>internal.repo</id> 
-        <name>Temporary Staging Repository</name> 
-        <url>file://${project.build.directory}/mvn-artifact</url> 
-    </repository> 
-	</distributionManagement>
-	
+    <distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>adriaag</name>
+     <url>https://maven.pkg.github.com/adriaag/jbibtex</url>
+   </repository>
+</distributionManagement>
 
 
 	<build>
