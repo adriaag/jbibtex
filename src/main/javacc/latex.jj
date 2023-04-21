@@ -66,13 +66,13 @@ TOKEN :
 <DEFAULT>
 TOKEN :
 {
-	< ASCII_LETTER : ["a"-"z", "A"-"Z"] >
+	< ASCII_LETTER : ["a"-"z", "A"-"Z", " "] >
 	|
 	< ASCII_DIGIT : ["0"-"9"] >
 	|
 	< LATIN_SUPPLEMENT : ["\u00a0"-"\u00ff"] >
 	|
-	< UNICODE_LETTER : ["\u0100"-"\u1fff", "\u20ac", "\u2122", "\u0020"] >
+	< UNICODE_LETTER : ["\u0100"-"\u1fff", "\u20ac", "\u2122"] >
 }
 
 private List<LaTeXObject> LaTeX() :
