@@ -56,7 +56,7 @@ TOKEN :
 <DEFAULT>
 TOKEN :
 {
-	< WHITESPACE : ["\t", "\n", " "] >
+	< WHITESPACE : ["\u0000"-"\u001f", " ", "\u0080"-"\u009f"] >
 	|
 	< SPECIAL : ["#", "$", "%", "&", "^", "_", "~"] >
 	|
