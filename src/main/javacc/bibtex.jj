@@ -348,7 +348,7 @@ TOKEN :
 	// NAME is a subtype (restriction) of IDENTIFIER, therefore it must be declared first
 	< NAME : ( <LETTER_OR_DIGIT> | <NAME_START_SYMBOL> ) ( <LETTER_OR_DIGIT> | <NAME_CONTINUATION_SYMBOL> )* >
 	|
-	< IDENTIFIER: ( <LETTER_OR_DIGIT> | <IDENTIFIER_START_SYMBOL> ) ( <LETTER_OR_DIGIT> | <IDENTIFIER_CONTINUATION_SYMBOL> )* >
+	< IDENTIFIER: ( <LETTER_OR_DIGIT> | <IDENTIFIER_START_SYMBOL> ) ( <LETTER_OR_DIGIT> | <IDENTIFIER_CONTINUATION_SYMBOL> | <WHITESPACE> )* (<LETTER_OR_DIGIT> | <IDENTIFIER_CONTINUATION_SYMBOL>)>
 	|
 	< #LETTER_OR_DIGIT: ( <ASCII_LETTER> | <ASCII_DIGIT> | <LATIN_LETTER> | <UNICODE_LETTER> ) >
 	|
@@ -366,7 +366,9 @@ TOKEN :
 	|
 	< #IDENTIFIER_START_SYMBOL : ["(", "-", ".", "[", "_"] >
 	|
-	< #IDENTIFIER_CONTINUATION_SYMBOL : [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", ">", "?", "[", "\\", "]", "^", "_", "|", "~"] >
+	< #IDENTIFIER_CONTINUATION_SYMBOL : ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", ">", "?", "[", "\\", "]", "^", "_", "|", "~"] >
+	|
+	< #WHITESPACE : [" "] >
 }
 
 private BibTeXDatabase Database(boolean performErrorRecovery) :
