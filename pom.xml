@@ -8,9 +8,9 @@
 		<version>9</version>
 	</parent>
 
-	<groupId>org.jbibtex</groupId>
+	<groupId>com.github.adriaag.jbibtex</groupId>
 	<artifactId>jbibtex</artifactId>
-	<version>1.0.21</version>
+	<version>1.0.22-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>JBibTeX</name>
@@ -53,14 +53,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-    <distributionManagement>
-   <repository>
-     <id>github</id>
-     <name>jbibtex repository</name>
-     <url>https://maven.pkg.github.com/adriaag/jbibtex</url>
-   </repository>
-</distributionManagement>
 
 
 	<build>
