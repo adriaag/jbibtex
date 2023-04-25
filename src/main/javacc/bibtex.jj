@@ -9,7 +9,7 @@ options {
 }
 
 PARSER_BEGIN(BibTeXParser)
-package com.github.adriaag.jbibtex;
+package com.github.adriaag;
 
 import java.io.File;
 import java.io.FileReader;

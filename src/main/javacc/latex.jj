@@ -10,7 +10,7 @@ options {
 }
 
 PARSER_BEGIN(LaTeXParser)
-package com.github.adriaag.jbibtex;
+package com.github.adriaag;
 
 import java.io.Reader;
 import java.io.StringReader;
