@@ -362,7 +362,7 @@ TOKEN :
 	|
 	< #NAME_START_SYMBOL: [".", "_"] >
 	|
-	< #NAME_CONTINUATION_SYMBOL: ["+", "-", ".", ":", "_"] >
+	< #NAME_CONTINUATION_SYMBOL: ["+", "-", ".", ":", "_", " "] >
 	|
 	< #IDENTIFIER_START_SYMBOL : ["(", "-", ".", "[", "_"] >
 	|
