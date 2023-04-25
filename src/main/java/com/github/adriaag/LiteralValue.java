@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2012 University of Tartu
  */
-package org.jbibtex;
+package com.github.adriaag;
 
 abstract
 public class LiteralValue extends Value {

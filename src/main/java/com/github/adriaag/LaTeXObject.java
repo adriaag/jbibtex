@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2012 University of Tartu
  */
-package org.jbibtex;
+package com.github.adriaag;
 
 import java.io.Serializable;
 
@@ -11,8 +11,8 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 	use = JsonTypeInfo.Id.CLASS
 )
 abstract
-public class BibTeXObject implements Serializable {
+public class LaTeXObject implements Serializable {
 
-	BibTeXObject(){
+	LaTeXObject(){
 	}
 }

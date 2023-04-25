@@ -5,11 +5,11 @@ package org.jbibtex;
 
 import org.junit.Test;
 
+import com.github.adriaag.Key;
+import com.github.adriaag.KeyMap;
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
-import org.jbibtex.Key;
-import org.jbibtex.KeyMap;
 
 public class KeyMapTest {
 

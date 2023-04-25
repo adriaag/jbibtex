@@ -5,9 +5,9 @@ package org.jbibtex;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import com.github.adriaag.StringUtil;
 
-import org.jbibtex.StringUtil;
+import static org.junit.Assert.assertEquals;
 
 public class StringUtilTest {
 
