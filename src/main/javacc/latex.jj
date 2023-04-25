@@ -10,7 +10,7 @@ options {
 }
 
 PARSER_BEGIN(LaTeXParser)
-package com.github.adriaag.jbibtex;
+package com.github.adriaag;
 
 import java.io.Reader;
 import java.io.StringReader;
@@ -72,7 +72,7 @@ TOKEN :
 	|
 	< LATIN_SUPPLEMENT : ["\u00a0"-"\u00ff"] >
 	|
-	< UNICODE_LETTER : ["\u0100"-"\uffff"] >
+	< UNICODE_LETTER : ["\u0100"-"\u1fff", "\u20ac", "\u2122"] >
 }
 
 private List<LaTeXObject> LaTeX() :
