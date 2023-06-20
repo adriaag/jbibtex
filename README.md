@@ -9,10 +9,17 @@ The current version of JBibTeX is **1.0.20** (16 March, 2022).
 
 The library JAR file (together with source and javadoc JAR files) is distributed via Maven Central repository:
 ```xml
+<repositories>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+ 
 <dependency>
-	<groupId>org.jbibtex</groupId>
-	<artifactId>jbibtex</artifactId>
-	<version>1.0.20</version>
+    <groupId>com.github.adriaag</groupId>
+    <artifactId>jbibtex</artifactId>
+    <version>1.0.22</version>
 </dependency>
 ```
 
