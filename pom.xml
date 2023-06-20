@@ -11,7 +11,7 @@
 	
 	<groupId>com.github.adriaag.jbibtex</groupId>
 	<artifactId>jbibtex</artifactId>
-	<version>1.0.22-SNAPSHOT</version>
+	<version>1.0.22</version>
 	<packaging>jar</packaging>
 
 	<name>JBibTeX</name>
